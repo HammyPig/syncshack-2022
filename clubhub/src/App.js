@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import ClubListPage from './ClubListPage.js'
 import EventListPage from './EventListPage.js'
+import EventEditor from "./EventEditor.js"
+import { events } from "./events.js"
 
 
 function App() {
   return (
     <>
-    <EventListPage />
+    <EventEditor event={events[0]}/>
     </>
   );
 }
