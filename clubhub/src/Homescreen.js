@@ -1,6 +1,8 @@
 import React from 'react';
 import App from './App';
 import logo from './clubhub-logo.png';
+import ClubListPage from './ClubListPage';
+import ClubProfile from './ClubProfile';
 import './Homescreen.css'
 
 class Homescreen extends React.Component {
@@ -33,7 +35,7 @@ class Homescreen extends React.Component {
           </div>
 
         </>
-        : <App />
+        : <ClubListPage />
         }
 
       </>
