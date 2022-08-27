@@ -11,17 +11,27 @@ class ClubCard extends React.Component {
 
         return (
             <>
-            <div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
-                <img src={`https://robohash.org/${name}?40x40`} width="40px"></img>
-                <div>
-                    <h2>{name}</h2>
-                    <p>{description}</p>
+            <div className="tc dib br3 pa2 ma2 grow bw2 shadow-5 ba w-50">
+                <div className="w-40 fl">
+
+                    <img src={`https://robohash.org/${name}?40x40`}
+                    style={{
+                        // "width":"30px",
+                        "height":"10rem"
+                    }}></img>   
+
                 </div>
-                {
-                tags.map((tag, i) => {
-                    return <Tag name={tag}/>
-                })
-                }
+
+                <div className="w-60 fr pr2">
+                    <h2 className='f2'>{name}</h2>
+                    <p>{description}</p>
+                    {
+                        tags.map((tag, i) => {
+                            return <Tag name={tag}/>
+                        })
+                    }
+                </div>
+
             </div>
             </>
         );
