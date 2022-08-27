@@ -1,13 +1,15 @@
 import React from 'react';
+import './index.css'
 
 class SearchBox extends React.Component {
     render() {
+        const {placeholder} = this.props;
         return (
-            <div className="pa2">
+            <div className="pa2 tc mt4">
                 <input
-                    className="pa3 ba b--green bg-lightest-blue"
+                    className="pa3 ba FillBox"
                     type="search"
-                    placeholder="search clubs"
+                    placeholder={placeholder}
                     onChange={this.props.searchChange}
                 />
             </div>

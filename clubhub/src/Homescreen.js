@@ -1,9 +1,6 @@
 import React from 'react';
-import App from './App';
 import logo from './clubhub-logo.png';
-import ClubListPage from './ClubListPage';
-import ClubProfile from './ClubProfile';
-import './Homescreen.css'
+import './index.css'
 import { useNavigate } from "react-router-dom";
 
 function Homescreen() {
@@ -11,7 +8,7 @@ function Homescreen() {
     
       return (
       <>
-          <div className='Header'>
+          <div className='banner'>
             <img src={logo} alt="clubhub-logo" />
           </div>
 

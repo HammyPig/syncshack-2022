@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './index.css'
 
 class Tag extends React.Component {
     render() {
@@ -6,7 +7,9 @@ class Tag extends React.Component {
 
         return (
             <>
-            <div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
+            <div className="tag" style={{
+                "backgroundColor":"#C8553D"
+            }}>
                 <p>{name}</p>
             </div>
             </>

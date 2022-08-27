@@ -2,18 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import ClubListPage from './ClubListPage.js'
-import EventListPage from './EventListPage.js'
-import ClubProfile from "./ClubProfile.js"
-import EventEditor from "./EventEditor.js"
-import { events } from "./events.js"
 import Homescreen from './Homescreen';
 import Header from './Header';
-
+import EventListPage from './EventListPage';
+import ClubProfile from './ClubProfile';
+import EventEditor from "./EventEditor.js"
 
 function App() {
   return (
     <Router>
-      header
       <Routes>
         <Route path="/" element={<Homescreen />} />
         <Route path="/clubs" element={<ClubListPage />} />
@@ -22,7 +19,6 @@ function App() {
         <Route path="/clubs/:id" element={<ClubProfile />} />
         {/* <Route path="*" element={<Error />}/> */}
       </Routes>
-      footer
     </Router>
   );
 }

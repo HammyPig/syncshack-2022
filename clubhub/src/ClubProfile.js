@@ -12,9 +12,10 @@ function ClubProfile(props) {
   return (
     <>
       <Header title="Club Profile" />
-      <div className='pa10 fl w-100' style={{
-        "backgroundColor":"black"
-      }}>
+      <div className='fl w-30'><img src="" alt="club logo" /></div>
+        <div className='pa10 fl w-70' style={{
+          "backgroundColor":"black"
+        }}>
         <p className='pa5 f-subheadline white tr'>{name}</p>
       </div>
       <div className='fl w-100'>
@@ -26,21 +27,14 @@ function ClubProfile(props) {
       </div>
 
       <div className='fl w-100'>
-        <div className='ma3 ba br3 pa4 bw2 f4'>{description}</div>
-        <div className='ma3 ba br3 pr2 pl2 pb2 bw2 f4'>
+        <div className='ma3 pa4 bw2 f4 ProfileBox'>{description}</div>
+        <div className='ma3 pa4 bw2 f4 ProfileBox'>
         <p className='b' style={{"white-space": "pre-line"}}>Socials:<br/>{socials.join("\n")}</p>
         </div>
-        <div className='ma3 ba br3 pr2 pl2 pb2  bw2 f4'>
+        <div className='ma3 pa4 bw2 f4 ProfileBox'>
           <p className='b'>Events:</p>
         </div>
       </div>
-
-      {/* <div style={{
-        "border-style": "solid",
-        "marginRight": "1rem",
-        "marginLeft": "1rem",
-        "marginTop": "5rem"
-        }}>hello</div> */}
 
     </>
     
