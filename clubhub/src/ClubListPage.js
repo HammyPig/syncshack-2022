@@ -4,6 +4,7 @@ import FilterBox from "./FilterBox.js"
 import ClubList from "./ClubList.js";
 import { clubs }  from "./clubs.js";
 import { tags } from "./tags.js";
+import Header from './Header.js';
 
 class ClubListPage extends React.Component {
     constructor() {
@@ -37,6 +38,7 @@ class ClubListPage extends React.Component {
 
         return (
             <>
+            <Header title="Club List" />  
             <SearchBox searchChange={this.onSearchChange}/>
             <FilterBox filterChange={this.onFilterChange}/>
             <ClubList clubs={filteredClubs}/>
