@@ -1,0 +1,17 @@
+export const tags = [
+    "faculty",
+    "international",
+    "politics",
+    "sports",
+    "charity",
+    "religion",
+    "lgbt",
+    "party",
+    "social",
+    "hobbies",
+    "music",
+    "arts",
+    "networking",
+    "learning",
+    "gender diversity",
+]
