@@ -5,9 +5,9 @@ class FilterBox extends React.Component {
         return (
             <div className="pa2 tc">
                 <input
-                    className="pa3 ba"
+                    className="pa3 ba FillBox"
                     type="search"
-                    placeholder="filter tags"
+                    placeholder="Filter tags"
                     onChange={this.props.filterChange}
                 />
             </div>

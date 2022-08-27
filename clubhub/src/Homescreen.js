@@ -3,7 +3,9 @@ import App from './App';
 import logo from './clubhub-logo.png';
 import ClubListPage from './ClubListPage';
 import ClubProfile from './ClubProfile';
-import './Homescreen.css'
+import './index.css'
+
+
 
 class Homescreen extends React.Component {
   constructor(props) {
@@ -25,7 +27,7 @@ class Homescreen extends React.Component {
       <>
         { route === 'Homescreen'
         ? <>
-          <div className='Header'>
+          <div className='banner'>
             <img src={logo} alt="clubhub-logo" />
           </div>
 

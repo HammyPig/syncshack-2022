@@ -1,5 +1,6 @@
 import React from 'react'
 import Tag from './Tag.js'
+import './index.css'
 
 class ClubCard extends React.Component {
     render() {
@@ -11,13 +12,14 @@ class ClubCard extends React.Component {
 
         return (
             <>
-            <div className="tc dib br3 pa2 ma2 grow bw2 shadow-5 ba w-50">
+            {/* <div className="tc dib br3 pa2 ma2 grow bw2 shadow-5 ba w-50"> */}
+            <div className="card">
                 <div className="w-40 fl">
 
                     <img src={`https://robohash.org/${name}?40x40`}
                     style={{
                         // "width":"30px",
-                        "height":"10rem"
+                        "height":"75%"
                     }}></img>   
 
                 </div>

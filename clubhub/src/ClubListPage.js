@@ -39,7 +39,7 @@ class ClubListPage extends React.Component {
         return (
             <>
             <Header title="Club List" />  
-            <SearchBox searchChange={this.onSearchChange}/>
+            <SearchBox searchChange={this.onSearchChange} placeholder="Search clubs"/>
             <FilterBox filterChange={this.onFilterChange}/>
             <ClubList clubs={filteredClubs}/>
             </>

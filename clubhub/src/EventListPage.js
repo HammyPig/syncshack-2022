@@ -2,6 +2,7 @@ import React from 'react';
 import SearchBox from "./SearchBox.js"
 import EventList from "./EventList.js";
 import { events }  from "./events.js";
+import Header from "./Header";
 
 class EventListPage extends React.Component {
     constructor() {
@@ -24,7 +25,8 @@ class EventListPage extends React.Component {
 
         return (
             <>
-            <SearchBox searchChange={this.onSearchChange}/>
+            <Header title="Event List" />
+            <SearchBox searchChange={this.onSearchChange} placeholder="Search events"/>
             <EventList events={filteredEvents}/>
             </>
         );
