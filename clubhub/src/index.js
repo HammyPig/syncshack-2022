@@ -4,6 +4,7 @@ import './index.css';
 import App from "./App.js"
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
+import ClubProfile from './ClubProfile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
