@@ -68,11 +68,11 @@ img {
 }
 
 .ProfileBox {
-  background-color: white;
+  background-color: #F28F3B;
   border-radius: 2rem;
   padding: 2rem;
   padding-left: 3rem;
-  width: 70rem;
+  width: 70%;
 }
 
 .tag {

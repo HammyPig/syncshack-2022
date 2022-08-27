@@ -1,48 +1,24 @@
 import React from 'react';
-import App from './App';
 import logo from './clubhub-logo.png';
-import ClubListPage from './ClubListPage';
-import ClubProfile from './ClubProfile';
 import './index.css'
+import { useNavigate } from "react-router-dom";
 
-
-
-class Homescreen extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      route: 'Homescreen'
-    };
-  };
-
-  getClub = () => {
-    this.setState({route: 'ClubList'});
-    // console.log(this.state)
-    console.log("click")
-  };
-
-  render() {
-    const {route} = this.state;
+function Homescreen() {
+    let navigate = useNavigate();
+    
       return (
       <>
-        { route === 'Homescreen'
-        ? <>
           <div className='banner'>
             <img src={logo} alt="clubhub-logo" />
           </div>
 
           <div className='Container'>
             <p className='Sub'>Joining a society should be more than scrolling through a list of names.</p>
-            <button className='Primary-Button' onClick={this.getClub}>Find your club</button>
+            {/* <button className='Primary-Button' onClick={this.getClub}>Find your club</button> */}
+            <button className='Primary-Button' onClick={() => {navigate("/clubs"); }}>Find your club</button>
           </div>
-
-        </>
-        : <ClubListPage />
-        }
-
       </>
     );
-  }
 }
 
 export default Homescreen;

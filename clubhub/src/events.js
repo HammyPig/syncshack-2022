@@ -1,5 +1,7 @@
 export const events = [
     {
+        clubId: "syncs",
+        eventId: "0",
         name: "SYNC SHACK",
         description: "You already KNOW what time it is 🥁 It's time for our ANNUAL SHACKATHON 🤓🥳 SYNC SHACK 🥳🤓 Similar to previous years, SYNC SHACK challenges teams of up to six students to design and build shacks.",
         startDate: "aug 27",
@@ -8,6 +10,8 @@ export const events = [
         endTime: "12:00 pm"
     },
     {
+        clubId: "syncs",
+        eventId: "1",
         name: "Event Title",
         description: "SUSOG is a hub for all gamers! Whether you’re a casual or a competitive player, or looking to make new friends, we’ve got you covered! Our society is passionate about bringing gamers together from every corner; from fighting games to FPS to RTS – you name, we do it!",
         startDate: "sep 2",
