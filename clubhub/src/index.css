@@ -27,10 +27,14 @@ code {
 
 .banner {
   background-color: #F28F3B;
-  height: 40rem;
+  height: 60vh;
   overflow: hidden;
   text-align: center;
   /* background: linear-gradient(#F28F3B, white); */
+}
+
+.banner > img {
+  height: 60vh;
 }
 
 .header {
@@ -39,10 +43,6 @@ code {
   color: white;
   border-style: solid;
   border-width: 1rem;
-}
-
-img {
-  height: 40rem;
 }
 
 .Sub {

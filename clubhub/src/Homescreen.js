@@ -12,7 +12,7 @@ function Homescreen() {
             <img src={logo} alt="clubhub-logo" />
           </div>
 
-          <div className='Container'>
+          <div className='Container' style={{"padding": "10vh"}}>
             <p className='Sub'>Joining a society should be more than scrolling through a list of names.</p>
             {/* <button className='Primary-Button' onClick={this.getClub}>Find your club</button> */}
             <button className='Primary-Button' onClick={() => {navigate("/clubs"); }}>Find your club</button>
