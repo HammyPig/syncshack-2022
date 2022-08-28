@@ -84,3 +84,10 @@ img {
   padding-top: 1px;
   border-radius: 1rem;
 }
+
+.tag > p {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
