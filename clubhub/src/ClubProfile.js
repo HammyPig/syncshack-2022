@@ -6,13 +6,13 @@ import { clubs } from "./clubs.js"
 function ClubProfile(props) {
   let navigate = useNavigate();
   let { id } = useParams(); // gets unique id, which then use api to fetch info
-  const { name, description, tags, socials } = clubs.filter(function(club){return club.id === id;} )[0];
+  const { name, description, image, tags, socials } = clubs.filter(function(club){return club.id === id;} )[0];
 
 
   return (
     <>
       <Header title="Club Profile" />
-      <div className='fl w-30'><img src="" alt="club logo" /></div>
+      <div className='fl w-30'><img src={image} alt="club logo" style={{"height": "380px", "width": "auto"}} /></div>
         <div className='pa10 fl w-70' style={{
           "backgroundColor":"black"
         }}>
