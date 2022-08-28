@@ -17,6 +17,10 @@ function Homescreen() {
             {/* <button className='Primary-Button' onClick={this.getClub}>Find your club</button> */}
             <button className='Primary-Button' onClick={() => {navigate("/clubs"); }}>Find your club</button>
           </div>
+
+          <div className='tc' onClick={() => {navigate("/club-admin")}}>
+            <p className='underline'> Already have an account? Sign in</p>
+          </div>
       </>
     );
 }

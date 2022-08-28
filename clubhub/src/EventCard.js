@@ -7,7 +7,7 @@ function EventCard(props) {
     let navigate = useNavigate();
     return (
         <>
-        <div className="card" onClick={() => {navigate(`/clubs/${clubId}/events/edit`); }}>
+        <div className="card" onClick={() => {navigate(`/clubs/${eventId}/events/edit`); }}>
             <h2>{name}</h2>
             <h3>{`${startDate} at ${startTime} - ${endDate} at ${endTime}`.toUpperCase()}</h3>
             <p>{description}</p>

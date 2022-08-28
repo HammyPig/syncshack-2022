@@ -7,6 +7,7 @@ import Header from './Header';
 import EventListPage from './EventListPage';
 import ClubProfile from './ClubProfile';
 import EventEditor from "./EventEditor.js"
+import ClubAdmin from "./ClubAdmin"
 
 function App() {
   return (
@@ -14,10 +15,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Homescreen />} />
         <Route path="/clubs" element={<ClubListPage />} />
-        <Route path="/clubs/:id/events" element={<EventListPage />} />
+        {/* <Route path="/clubs/:id/events" element={<EventListPage />} /> */}
+        <Route path="/clubs/events" element={<EventListPage />} />
         <Route path="/clubs/:id/events/edit" element={<EventEditor />} />
         <Route path="/clubs/:id" element={<ClubProfile />} />
-        {/* <Route path="*" element={<Error />}/> */}
+        <Route path="/club-admin" element={<ClubAdmin />} />
+        // {/* <Route path="*" element={<Error />}/> */}
       </Routes>
     </Router>
   );
