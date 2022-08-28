@@ -4,7 +4,7 @@ import './index.css'
 import { useNavigate } from "react-router-dom";
 
 function ClubCard(props) {
-    var {id, name, description, tags} = props.club;
+    var {id, name, image, description, tags} = props.club;
 
     let navigate = useNavigate();
 
@@ -17,10 +17,10 @@ function ClubCard(props) {
         <div className="card" onClick={() => {navigate(`/clubs/${id}`); }}>
             <div className="w-40 fl">
 
-                <img src={`https://robohash.org/${name}?40x40`}
+                <img src={image}
                 style={{
-                    // "width":"30px",
-                    "height":"75%"
+                    "width":"250px",
+                    "height":"auto"
                 }}></img>   
 
             </div>
